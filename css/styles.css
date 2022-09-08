@@ -1,0 +1,166 @@
+body {
+    width:100vw;
+    margin:0;
+}
+h1 {
+    font-size: 5em;
+}
+
+/* header all pages */
+.header-background {
+    background-color: #E1ACF8;
+}
+.header {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 10vh;
+}
+.header a {
+    font-size: 4.5em;
+    color: #FFFF;
+    text-decoration: none;
+}
+.header-menu {
+    display:flex;
+    font-size: 3em;
+    justify-content: space-evenly;
+}
+.header-menu a:hover {
+    background-color: #FFFF;
+
+}
+/* header end */
+/* SLIDER / CAROUSEL*/
+.blogPosts {
+    position:relative;
+    overflow:hidden;
+    background-color: #D6D6D6 ;
+}
+
+#ulCards {
+    overflow: scroll;
+    list-style: none;
+    display:flex;
+    width:100%;
+    margin:auto;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+.listCard {
+    width:100%;
+    flex: 1 0 100%;
+}
+.listCard img {
+    display: block;
+    margin:auto;
+    width:99%;
+}
+.listCard a {
+    text-decoration: none;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.arrowButtons {
+    position:absolute;
+    display:flex;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height: 2em;
+    width: 2em;
+    background-color:#FFFF;
+    font-size: 4.5em;
+    border:none;
+    padding:0;
+    cursor:pointer;
+    opacity:0.5;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowButtons:hover, .arrowButtons:focus {
+    opacity:1;
+}
+
+#carouselNext {
+    right:0;
+
+}
+
+#carouselPrev {
+    left:0;
+}
+/* SLIDER / CAROUSEL END */
+
+/*index page */
+.index-body {
+    display:flex;
+    flex-direction: column;
+}
+.index-latest {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.index-latest h1 {
+    margin:auto;
+}
+.post img {
+    width: 30em;
+    object-fit: contain;
+}
+/* index page end */
+/* Contact */
+.form-error {
+    display: none;
+    font-size:1em;
+}
+/* Contact end */
+
+/* post page */
+.detailsH1 {
+    text-align: center;
+}
+.specificPost{
+    padding-left: 1em;
+}
+#modalBackground {
+    position:fixed;
+    display:none;
+    top: 0;
+    left: 0;
+    background-color: rgb(228,228,288,0.9);
+    margin:auto;
+    width:100vw;
+    height: 100vh;
+    align-items:center;
+    justify-content: center;
+}
+
+#modalImage img {
+    display: block;
+    width:55em;
+    margin:auto;
+    opacity: 1;
+}
+
+#openModalImage img{
+    display: block;
+    width: 40em;
+    object-fit: contain;
+    margin: auto;
+}
+/* post page end */
+
+/* Blogs page */
+
+.nextTenPosts {
+    display:none;
+}
+
+/* Blogs page end */
