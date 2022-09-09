@@ -9,6 +9,7 @@ h1 {
 /* header all pages */
 .header-background {
     background-color: #E1ACF8;
+    box-shadow: 0em .1em .5em;
 }
 .header {
     display:flex;
@@ -25,15 +26,18 @@ h1 {
 }
 .header-menu {
     display:flex;
-    font-size: 1em;
+    font-size: 1.5em;
     justify-content: space-evenly;
+    margin-bottom: .3em;
 }
 .header-menu a {
     text-decoration: none;
+    color:#FFFF;
 }
 .header-menu a:hover {
     background-color: #FFFF;
     text-decoration: underline;
+    color: #0000;
 }
 .header-menu a:active {
     background-color: #FFFF;
