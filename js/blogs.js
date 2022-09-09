@@ -20,9 +20,11 @@ getPosts();
 function createHTML(posts){
     posts.forEach(function(post){
         postContainer.innerHTML += 
-        `<a href="post.html?id=${post.id}" class="post">
+        `<a href="post.html?id=${post.id}" class="blogs-post">
             <div class="postTitle"<h2>${post.title.rendered}</h2></div>
-            <img src="${post._embedded['wp:featuredmedia'][0].source_url}">
+            <div class="blogs-post-image">
+                <img src="${post._embedded['wp:featuredmedia'][0].source_url}">
+            </div>
         </a>`;
     })
 }
@@ -54,5 +56,5 @@ function createNextHTML(nextPosts){
 
 function displayNextTen() {
     const viewmore = document.querySelector(".nextTenPosts");
-    viewmore.style.display = "block";
+    viewmore.style.display = "grid";
 }

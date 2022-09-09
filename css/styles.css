@@ -3,7 +3,7 @@ body {
     margin:0;
 }
 h1 {
-    font-size: 5em;
+    font-size: 2em;
 }
 
 /* header all pages */
@@ -19,17 +19,21 @@ h1 {
     height: 10vh;
 }
 .header a {
-    font-size: 4.5em;
+    font-size: 2em;
     color: #FFFF;
     text-decoration: none;
 }
 .header-menu {
     display:flex;
-    font-size: 3em;
+    font-size: 1em;
     justify-content: space-evenly;
+}
+.header-menu a {
+    text-decoration: none;
 }
 .header-menu a:hover {
     background-color: #FFFF;
+    text-decoration: underline;
 
 }
 /* header end */
@@ -71,10 +75,10 @@ h1 {
     top:0;
     bottom:0;
     margin:auto;
-    height: 2em;
-    width: 2em;
+    height: 1em;
+    width: 1em;
     background-color:#FFFF;
-    font-size: 4.5em;
+    font-size: 2em;
     border:none;
     padding:0;
     cursor:pointer;
@@ -98,7 +102,7 @@ h1 {
 /* SLIDER / CAROUSEL END */
 
 /*index page */
-.index-body {
+.index-body, .about-body {
     display:flex;
     flex-direction: column;
 }
@@ -111,7 +115,7 @@ h1 {
     margin:auto;
 }
 .post img {
-    width: 30em;
+    width: 10em;
     object-fit: contain;
 }
 /* index page end */
@@ -128,6 +132,7 @@ h1 {
 }
 .specificPost{
     padding-left: 1em;
+    padding-right: 1em;
 }
 #modalBackground {
     position:fixed;
@@ -144,23 +149,62 @@ h1 {
 
 #modalImage img {
     display: block;
-    width:55em;
+    width:22em;
     margin:auto;
     opacity: 1;
 }
 
 #openModalImage img{
     display: block;
-    width: 40em;
+    width: 15em;
     object-fit: contain;
     margin: auto;
 }
 /* post page end */
 
 /* Blogs page */
+.blogs-body {
+    padding-left: 1em;
+}
+.tenBlogPosts, .nextTenPosts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.blogs-post {
+    width: 10em;
+}
+.blogs-post img {
+    width: 10em;
+    object-fit: contain;
+}
+.blogs-post-image {
+    width:10em;
+    object-fit: contain;
+}
 
 .nextTenPosts {
     display:none;
+}
+
+.viewMoreButtonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#viewMoreButton {
+    border:none;
+    text-decoration: none;
+    border-radius: 30%;
+    background-color: #FFFF;
+}
+
+#viewMoreButton:hover {
+    text-decoration: underline;
 }
 
 /* Blogs page end */

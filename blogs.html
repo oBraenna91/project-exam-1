@@ -2,14 +2,30 @@
     <html lang="en">
         <head>
             <title>The Fitness Blog | Blogs</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href="css/styles.css" rel="stylesheet">
         </head>
         <body>
-            <h1>Siste innlegg</h1>
-            <div class="tenBlogPosts">
+            <div class="header-background">
+                <div class="header">
+                    <a href="index.html">The Fitness Blog</a>
+                </div>
+                <div class="header-menu">
+                  <a href="index.html">Home</a>
+                 <a href="about.html">About</a>
+                    <a href="blogs.html">Posts</a>
+                    <a href="contact.html">Contact</a>
+                </div>
             </div>
-            <button id="viewmorebutton" onclick="displayNextTen()">View more</button>
-            <div class="nextTenPosts">
+            <div class="blogs-body">
+                <h1>My latest posts!</h1>
+                <div class="tenBlogPosts">
+                </div>
+                <div class="viewMoreButtonDiv">
+                    <button id="viewMoreButton" onclick="displayNextTen()">View more</button>
+                </div>
+                <div class="nextTenPosts">
+                </div>
             </div>
             <script src="js/blogs.js"></script>
         </body>
