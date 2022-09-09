@@ -37,7 +37,7 @@ h1 {
 .header-menu a:hover {
     background-color: #FFFF;
     text-decoration: underline;
-    color: #0000;
+    color: #D6D6D6;
 }
 .header-menu a:active {
     background-color: #FFFF;
