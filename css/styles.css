@@ -34,7 +34,9 @@ h1 {
 .header-menu a:hover {
     background-color: #FFFF;
     text-decoration: underline;
-
+}
+.header-menu a:active {
+    background-color: #FFFF;
 }
 /* header end */
 /* SLIDER / CAROUSEL*/
@@ -165,6 +167,10 @@ h1 {
 /* Blogs page */
 .blogs-body {
     padding-left: 1em;
+}
+
+.blogs-body h1 {
+    text-align: center;
 }
 .tenBlogPosts, .nextTenPosts {
     display: grid;
