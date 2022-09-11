@@ -47,7 +47,7 @@ getNextTenPosts();
 function createNextHTML(nextPosts){
     nextPosts.forEach(function(nextPosts){
         postContainerNext.innerHTML += 
-        `<a href="post.html?id=${nextPosts.id}" class="post">
+        `<a href="post.html?id=${nextPosts.id}" class="blogs-post">
             <div class="postTitle"<h2>${nextPosts.title.rendered}</h2></div>
             <img src="${nextPosts._embedded['wp:featuredmedia'][0].source_url}">
         </a>`;
