@@ -7,32 +7,24 @@ h1 {
 }
 
 /* header all pages */
-.header-background {
-    background-color: #E1ACF8;
-    box-shadow: 0em .1em .5em;
-}
 .header {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     width:100vw;
-    height: 10vh;
+    height: 25vh;
 }
-.header a {
-    font-size: 2em;
-    color: #FFFF;
-    text-decoration: none;
+.header img {
+    object-fit: cover;
 }
+
 .header-menu {
     display:flex;
+    background-color: #FFFF;
     font-size: 1.5em;
     justify-content: space-evenly;
     margin-bottom: .3em;
 }
 .header-menu a {
     text-decoration: none;
-    color:#FFFF;
+    color:#000;
 }
 .header-menu a:hover {
     background-color: #FFFF;
@@ -113,6 +105,10 @@ h1 {
 .index-body, .about-body {
     display:flex;
     flex-direction: column;
+}
+.index-intro {
+    margin: .5em;
+    margin-top: 0;
 }
 .index-latest {
     display:flex;
