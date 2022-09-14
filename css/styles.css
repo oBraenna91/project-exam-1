@@ -2,8 +2,21 @@ body {
     width:100vw;
     margin:0;
 }
+body p {
+    font-family: expo-serif-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+}
 h1 {
+    font-family: expo-serif-pro, serif;
+    font-weight: 600;
+    font-style: italic;
     font-size: 2em;
+}
+h2 {
+    font-family: expo-serif-pro, serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 /* header all pages */
@@ -68,6 +81,11 @@ h1 {
     color: #000;
 }
 
+.indexPostTitle {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
 .arrowButtons {
     position:absolute;
     display:flex;
@@ -126,8 +144,45 @@ h1 {
 /* Contact */
 .form-error {
     display: none;
-    font-size:1em;
+    font-size:1.2em;
+    color: #FD3737;
 }
+.contact-container {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+.input {
+    border-radius: 1.1em;
+    padding:.8em;
+    margin-top: 1em;
+    height: 2em;
+    border-width: .2em;
+    font-family: expo-serif-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#textarea {
+    width:70vw;
+    height:15vh;
+    border-width: .2em;
+}
+.submitbutton {
+    margin-top: 1em;
+    border-radius: 1.1em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: expo-serif-pro, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    background-color: #FFB34B;
+    border: none;
+    color: #FFFF;
+}
+
 /* Contact end */
 
 /* post page */
@@ -216,6 +271,10 @@ h1 {
     text-decoration: none;
     border-radius: 30%;
     background-color: #FFFF;
+    font-family: expo-serif-pro, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2em;
 }
 
 #viewMoreButton:hover {

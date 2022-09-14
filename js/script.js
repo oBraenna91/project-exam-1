@@ -23,7 +23,7 @@ function createHTML(posts){
         `<li class="listCard">
             <div class="blogCard">
             <a href="post.html?id=${post.id}" class="post">
-            <div class="postTitle"<h2>${post.title.rendered}</h2></div>
+            <div class="indexPostTitle"<h2>${post.title.rendered}</h2></div>
             <img src="${post._embedded['wp:featuredmedia'][0].source_url}">
             </a>
             </div>

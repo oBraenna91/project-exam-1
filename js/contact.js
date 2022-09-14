@@ -14,8 +14,8 @@ const form = document.querySelector("#contact-form");
  const emailError = document.querySelector("#email-error");
  const contactSubject = document.querySelector("#contact-subject");
  const subjectError = document.querySelector("#subject-error");
- const contactMessage = document.querySelector("#contact-message");
- const errorMessage = document.querySelector("#message-error");
+ const textMessage = document.querySelector("#textarea");
+ const textError = document.querySelector("#text-error");
 
  function validateForm () {
     event.preventDefault(); 
@@ -32,11 +32,11 @@ const form = document.querySelector("#contact-form");
     else {
         subjectError.style.display = "block";
     }
-    if(checkLength(contactMessage.value, 24) === true) {
-        errorMessage.style.display = "none";
+    if(checkLength(textarea.value, 24) === true) {
+        textError.style.display = "none";
     }
     else {
-        errorMessage.style.display = "block";
+        textError.style.display = "block";
     }
     if(validateEmail(contactEmail.value) === true) {
         emailError.style.display = "none";
@@ -45,7 +45,6 @@ const form = document.querySelector("#contact-form");
         emailError.style.display = "block";
     }
 
-    console.log("hello");
  }
 
  form.addEventListener("submit", validateForm )
