@@ -240,7 +240,11 @@ h2 {
 }
 
 .blogs-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 10em;
+    margin-bottom: 0;
 }
 .blogs-post img {
     width: 10em;
