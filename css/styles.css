@@ -140,6 +140,10 @@ h2 {
     width: 10em;
     object-fit: contain;
 }
+.index-lorem {
+    margin: .5em;
+    margin-right: .5em;
+}
 /* index page end */
 /* Contact */
 .form-error {
@@ -242,7 +246,7 @@ h2 {
 .blogs-post {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-end   ;
     width: 10em;
     margin-bottom: 0;
 }
@@ -286,3 +290,12 @@ h2 {
 }
 
 /* Blogs page end */
+
+/* About page */
+
+.about-lorem {
+    margin:.5em;
+    margin-right: .5em;
+}
+
+/* About page end */
