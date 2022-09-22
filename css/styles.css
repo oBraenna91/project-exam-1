@@ -87,9 +87,9 @@ h2 {
     margin-top: .5em;
     margin-bottom: .5em;
 }
-.indexPostImage img{
+/*.indexPostImage img{
     border-radius: .5em;
-}
+}*/
 .arrowButtons {
     position:absolute;
     display:flex;
