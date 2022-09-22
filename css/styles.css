@@ -132,6 +132,14 @@ h2 {
     margin: .5em;
     margin-top: 0;
 }
+.index-intro-background {
+    background-image: url("../images/index-background.jpg");
+    min-height: 12em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .index-latest {
     display:flex;
     flex-direction: column;
