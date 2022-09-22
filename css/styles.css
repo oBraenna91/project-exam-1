@@ -52,7 +52,9 @@ h2 {
 .blogPosts {
     position:relative;
     overflow:hidden;
-    background-color: #D6D6D6 ;
+    background-color: #D5D3D2;
+    margin: 2em 3em 2em 3em;
+    border-radius: .5em;
 }
 
 #ulCards {
@@ -85,7 +87,9 @@ h2 {
     margin-top: .5em;
     margin-bottom: .5em;
 }
-
+.indexPostImage img{
+    border-radius: .5em;
+}
 .arrowButtons {
     position:absolute;
     display:flex;
@@ -132,9 +136,15 @@ h2 {
     display:flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 1em;
+    background-color: #FFBD62;
+    padding-top: 1em;
+    border-radius: .5em;
+
 }
 .index-latest h2 {
     margin:auto;
+    text-decoration: underline;
 }
 .post img {
     width: 10em;
@@ -227,8 +237,9 @@ h2 {
 
 /* Blogs page */
 .blogs-body {
-    padding-left: 1em;
+    padding-left: .5em;
 }
+
 .blogs-body a {
     text-decoration: none;
 }
@@ -239,7 +250,7 @@ h2 {
 .tenBlogPosts, .nextTenPosts {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 2em;
+    grid-row-gap: 1em;
 
 }
 
@@ -249,6 +260,9 @@ h2 {
     justify-content: flex-end   ;
     width: 10em;
     margin-bottom: 0;
+    background-color: #ECEDEB;
+    padding: .5em;
+    border-radius: .5em;
 }
 .blogs-post img {
     width: 10em;
@@ -257,9 +271,14 @@ h2 {
 .blogs-post-image {
     width:10em;
     object-fit: contain;
+    margin-top: .5em;
+}
+.blogs-post-image img {
+    border-radius: .5em;
 }
 .postTitle {
     color:#000;
+    margin: auto;
 }
 
 .nextTenPosts {
@@ -296,6 +315,23 @@ h2 {
 .about-lorem {
     margin:.5em;
     margin-right: .5em;
+}
+
+.about-p-background-1 {
+    background-image: url("../images/about-image.jpg");
+    min-height: 12em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-p-background-2 {
+    background-image: url("../images/about-image.jpg");
+    min-height: 12em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* About page end */
