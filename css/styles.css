@@ -85,9 +85,6 @@ h2 {
     margin-top: .5em;
     margin-bottom: .5em;
 }
-/*.indexPostImage img{
-    border-radius: .5em;
-}*/
 .arrowButtons {
     position:absolute;
     display:flex;
@@ -132,7 +129,7 @@ h2 {
 }
 .index-intro-background {
     background-image: url("../images/index-background.jpg");
-    min-height: 12em;
+    height: 15em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -344,6 +341,9 @@ h2 {
 /* Tablet size */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
    /*index page*/
+    .index-intro-background {
+        height:20em;
+    }
     .index-latest {
        width: 80vw;
        margin: auto;
