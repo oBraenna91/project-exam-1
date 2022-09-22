@@ -22,7 +22,7 @@ h2 {
 /* header all pages */
 .header {
     width:100vw;
-    height: 25vh;
+    height: 25%;
 }
 .header img {
     object-fit: cover;
@@ -34,6 +34,7 @@ h2 {
     font-size: 1.5em;
     justify-content: space-evenly;
     margin-bottom: .3em;
+    margin-top: 1em;
 }
 .header-menu a {
     text-decoration: none;
@@ -244,9 +245,6 @@ h2 {
 /* post page end */
 
 /* Blogs page */
-.blogs-body {
-    padding-left: .5em;
-}
 
 .blogs-body a {
     text-decoration: none;
@@ -258,29 +256,29 @@ h2 {
 .tenBlogPosts, .nextTenPosts {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 1em;
-
+    grid-gap: 1em;
 }
-
 .blogs-post {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end   ;
+    justify-content: flex-end;
+    align-items: center;
     width: 10em;
-    margin-bottom: 0;
+    height:17em;
     background-color: #ECEDEB;
     padding: .5em;
     border-radius: .5em;
+    margin:auto;
 }
 .blogs-post img {
-    width: 10em;
+    width: 100%;
     object-fit: contain;
 }
-.blogs-post-image {
+/*.blogs-post-image {
     width:10em;
     object-fit: contain;
     margin-top: .5em;
-}
+}*/
 .blogs-post-image img {
     border-radius: .5em;
 }
@@ -343,3 +341,28 @@ h2 {
 }
 
 /* About page end */
+
+/* MEDIA QUERIES */
+
+/* Tablet size */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+   /*index page*/
+    .index-latest {
+       width: 80vw;
+       margin: auto;
+   }
+   /* Posts page */
+   .blogs-post {
+    width: 45vw;
+    height:60vh;
+}
+    .postTitle {
+        font-size: 2em;
+    }
+    .viewMoreButtonDiv {
+        font-size: 2em;
+    }
+/* Desktop size*/
+
+/* MEDIA QUERIES END */
+}
