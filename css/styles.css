@@ -53,7 +53,6 @@ h2 {
 .blogPosts {
     position:relative;
     overflow:hidden;
-    background-color: #D5D3D2;
     margin: 1em 2em 1em 2em;
     border-radius: .5em;
 }
@@ -69,6 +68,8 @@ h2 {
 .listCard {
     width:100%;
     flex: 1 0 100%;
+    background-color: #D5D3D2;
+    padding: 0 1em 0 0;
 }
 .listCard img {
     display: block;
@@ -140,7 +141,10 @@ h2 {
     flex-direction: column;
     justify-content: center;
     margin-top: 1em;
-    background-color: #FFBD62;
+    /*background-color: #FFBD62;*/
+    /*background-image: url("../images/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
     padding-top: 1em;
     border-radius: .5em;
 
@@ -317,15 +321,7 @@ h2 {
     margin-right: .5em;
 }
 
-.about-p-background-1 {
-    background-image: url("../images/about-image.jpg");
-    min-height: 12em;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.about-p-background-2 {
+.about-p-background {
     background-image: url("../images/about-image.jpg");
     min-height: 12em;
     background-attachment: fixed;
@@ -340,14 +336,52 @@ h2 {
 
 /* Tablet size */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
+    /* carousel */
+    .index-latest {
+        width:90vw;
+        margin:auto;
+    }
+    .index-latest h2 {
+        margin-bottom: 1em;
+    }
+    .blogPosts {
+        position:relative;
+        overflow:hidden;
+        /*margin: 1em 2em 1em 2em;*/
+        margin:auto;
+        border-radius: .5em;
+        width:75vw;
+        height:50vh;
+    }
+    #ulCards {
+        overflow: scroll;
+        list-style: none;
+        display:flex;
+        width:80vw;
+        margin:auto;
+        padding:0;
+        scroll-behavior: smooth;
+    }
+    .listCard {
+        width:50vw;
+        flex: 1 1 20vw;
+        margin-right: 4.8vw;
+        padding-left: 1em;
+    }
+    .blogCard {
+        width:30vw;
+        flex: 1 1 30vw;
+    }
+    .listCard img {
+        display: block;
+        margin:auto;
+        width:99%;
+    }
+    /* carousel end */
    /*index page*/
     .index-intro-background {
         height:20em;
     }
-    .index-latest {
-       width: 80vw;
-       margin: auto;
-   }
    /* Posts page */
    .blogs-post {
     width: 45vw;
