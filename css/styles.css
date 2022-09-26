@@ -191,7 +191,7 @@ h2 {
     margin:.5em;
 }
 .index-p1, .index-p2, .index-p3, .index-p4 {
-    margin:.5em;
+    margin:0 .5em 0 .5em;
     padding-top: 1.5em;
 }
 .index-p3, .index-p4 {
@@ -227,9 +227,12 @@ h2 {
     font-size:1.2em;
     color: #FD3737;
 }
-.contact-container {
+.contact-container, .contact-flex {
     margin-left: .5em;
     margin-right: .5em;
+}
+.contact-image {
+    display: none;
 }
 .input {
     border-radius: 1.1em;
@@ -376,17 +379,6 @@ h2 {
 #viewMoreButton:hover {
     text-decoration: underline;
 }
-/*.blogs-background {
-    background-image: url("../images/posts-image.jpg");
-    height: 100%;
-    width:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    z-index:-1;
-    top:0;
-}*/
 
 /* Blogs page end */
 
@@ -439,15 +431,42 @@ h2 {
 
 /* Tablet size */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-    /* carousel */
+    
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    
+    /* INDEX */
     .index-latest {
         width:90vw;
         margin:auto;
         max-height: 40vh;
     }
+    .index-intro h1 {
+        text-align: center;
+    }
+    .index-intro {
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+    }
     .index-latest h2 {
         margin-bottom: 1em;
     }
+    .index-blank1 {
+        width:100%;
+        height: 20vh;
+    }
+    
+
+
+    /* CAROUSEL */
+    
     .blogPosts {
         position:relative;
         overflow:hidden;
@@ -482,26 +501,146 @@ h2 {
         margin:auto;
         width:99%;
     }
-    /* carousel end */
-   /*index page*/
-    .index-intro-background {
-        height:20em;
-    }
-   /* Posts page */
+
+
+
+   /* BLOGS */
+
+
    .blogs-post {
     width: 45vw;
     height:60vh;
-}
+    }
     .postTitle {
         font-size: 2em;
     }
     .viewMoreButtonDiv {
         font-size: 2em;
     }
+
+
+    /* CONTACT */
+
+    .contact-background {
+        top: 35%;
+    }
+
+    /* POSTS */
+
+    #modalImage img {
+        width:40em;
+    }
+    
+    #openModalImage img{
+        width: 25em;
+    }
+
+    .details-description {
+        margin-top: 3em;
+        font-size: 1.5em;
+    }
+}
+
+
 /* Desktop size*/
 
+@media screen and (min-width: 1025px){
+    .index-body, .index-intro {
+        max-width: 99vw;
+    }
+    .index-p4 {
+        max-width:99vw;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    .index-latest {
+        width:85vw;
+        margin:auto;
+    }
+    .blogPosts {
+        height:auto;
+    }
+    .listCard {
+        height:auto;
+        flex: 1 1 50%;
+        margin-right: 2em;
+    }
+    .blogCard {
+        margin: 0 1.5em 0 1.5em;
+    }
+    .post {
+        display: flex;
+        flex-direction: column;
+    }
+    .indexPostTitle {
+        font-size: 1.5em;
+    }
+    .indexPostImage img {
+        width:10em;
+        margin:auto;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .index-h1, .about-h1 {
+        text-align: center;
+    }
+    .index-p1, .index-p2, .index-p3, .index-p4, .about-p1, .about-p2, .about-p3, .about-p4 {
+        margin-left: 7em;
+        margin-right: 7em;
+    }
+    .blogs-post {
+        width:20em;
+        height: 30em;
+    }
+    .tenBlogPosts, .nextTenPosts {
+        grid-gap: 1em;
+        margin-left:10em;
+        margin-right: 10em;
+    }
+    #modalImage img {
+        width:40em;
+    }
+    
+    #openModalImage img{
+        width: 25em;
+    }
 
+    .details-description {
+        margin-top: 3em;
+        margin-left:10em;
+        margin-right: 10em;
+    }
+    .contact-background {
+        display:none;
+    }
+    #textarea {
+        width:30vw;
+        height:15vh;
+        border-width: 0;
+    }
+    .contact-text {
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+    .contact-flex {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .contact-image {
+        display:block;
+    }
+    .contact-image img {
+        width:30vw;
+    }
+}
 
 
 /* MEDIA QUERIES END */
-}

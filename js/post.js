@@ -6,6 +6,8 @@ const openModalImage = document.querySelector("#openModalImage");
 
 const headLineContainer =document.querySelector("#headline");
 
+const loadingWheel = document.querySelector("#loading-wheel");
+
 const queryString = document.location.search;
 
 const params = new URLSearchParams (queryString);
@@ -45,7 +47,8 @@ function createHtml(post) {
     openModalImage.innerHTML = `
                                 <div id="openModalImageButton">
                                 <img src="${post._embedded['wp:featuredmedia'][0].source_url}" alt="${post.title}">
-                                </div>`
+                                </div>`;
+    loadingWheel.style.display= "none";
 }
 
 openModalImage.addEventListener("click", event => {
