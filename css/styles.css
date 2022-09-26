@@ -331,19 +331,39 @@ h2 {
 
 /* About page */
 
+.about-body {
+    background-color: #FFF;
+}
+
 .about-lorem {
     margin:.5em;
     margin-right: .5em;
 }
 
-.about-p-background {
+.about-background {
     background-image: url("../images/about-image.jpg");
-    min-height: 12em;
-    background-attachment: fixed;
+    height: 100%;
+    width:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: fixed;
+    z-index: -1;
+    top:3%;
 }
+.about-blank-1, .about-blank-2, .about-blank-3 {
+    width:100;
+}
+.about-blank-1 {
+    height:40vh;
+}
+.about-blank-2 {
+    height: 30vh;
+}
+.about-blank-3 {
+    height: 35vh;
+}
+
 
 /* About page end */
 
@@ -355,6 +375,7 @@ h2 {
     .index-latest {
         width:90vw;
         margin:auto;
+        max-height: 40vh;
     }
     .index-latest h2 {
         margin-bottom: 1em;
@@ -381,7 +402,8 @@ h2 {
         width:50vw;
         flex: 1 1 20vw;
         margin-right: 4.8vw;
-        padding-left: 1em;
+        /*padding-left: 1em;*/
+        padding: 0 1em 0 1em;
     }
     .blogCard {
         width:30vw;
