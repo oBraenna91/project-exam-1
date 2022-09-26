@@ -130,6 +130,28 @@ h2 {
 
 
 
+/* LOADING WHEEL */
+#loading-wheel {
+    border: .5em solid;
+    border-color: transparent;
+    border-top: .5em solid #FFB34B;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    animation: spin 3s linear infinite;
+    margin:auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* LOADING WHEEL END*/
+
+
+
+
+
 /*index page */
 .index-body, .about-body {
     display:flex;
@@ -354,7 +376,7 @@ h2 {
 #viewMoreButton:hover {
     text-decoration: underline;
 }
-.blogs-background {
+/*.blogs-background {
     background-image: url("../images/posts-image.jpg");
     height: 100%;
     width:100%;
@@ -364,7 +386,7 @@ h2 {
     position: fixed;
     z-index:-1;
     top:0;
-}
+}*/
 
 /* Blogs page end */
 

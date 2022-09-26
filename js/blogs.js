@@ -2,6 +2,7 @@ const urlNext ="https://noroff.braenna.one/wp-json/wp/v2/posts?page=2&_embed";
 const postContainerNext = document.querySelector(".nextTenPosts");
 const url ="https://noroff.braenna.one/wp-json/wp/v2/posts?_embed";
 const postContainer = document.querySelector(".tenBlogPosts");
+const loadingWheel = document.querySelector("#loading-wheel");
 
 async function getPosts(){
     try {
@@ -27,6 +28,7 @@ function createHTML(posts){
             </div>
         </a>`;
     })
+    loadingWheel.style.display= "none";
 }
 
 

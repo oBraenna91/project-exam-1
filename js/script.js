@@ -1,5 +1,6 @@
 const url ="https://noroff.braenna.one/wp-json/wp/v2/posts?_embed";
 const postContainer = document.querySelector("#ulCards");
+const loadingWheel = document.querySelector("#loading-wheel");
 
 
 
@@ -31,6 +32,7 @@ function createHTML(posts){
             </div>
         </li>`;
     })
+    loadingWheel.style.display= "none";
 }
 
 const nextButton = document.getElementById("carouselNext");
