@@ -23,6 +23,8 @@ h2 {
 .header {
     width:100vw;
     height: 25%;
+    background-color: #FFFF;
+    margin-bottom: -.1em;
 }
 .header img {
     object-fit: cover;
@@ -69,7 +71,6 @@ h2 {
     width:100%;
     flex: 1 0 100%;
     background-color: #D5D3D2;
-    padding: 0 1em 0 0;
 }
 .listCard img {
     display: block;
@@ -124,42 +125,56 @@ h2 {
     display:flex;
     flex-direction: column;
 }
-.index-intro {
-    margin: .5em;
-    margin-top: 0;
-}
-.index-intro-background {
+.index-background {
     background-image: url("../images/index-background.jpg");
-    height: 15em;
-    background-attachment: fixed;
+    height: 100%;
+    width:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: fixed;
+    z-index: -1;
+    top:5%;
+
 }
 .index-latest {
     display:flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 1em;
-    /*background-color: #FFBD62;*/
-    /*background-image: url("../images/index-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;*/
     padding-top: 1em;
     border-radius: .5em;
-
+}
+.index-latest h2 {
+    background-color:#FFFF;
+    padding: .5em 1em .5em 1em;
+    border-radius: .5em;
+}
+.index-blank1 {
+    width:100%;
+    height: 30vh;
+}
+.index-intro {
+    background-color: #FFFF;
+}
+.index-h1 {
+    margin:.5em;
 }
 .index-latest h2 {
     margin:auto;
     text-decoration: underline;
 }
+.index-p1, .index-p2, .index-p3, .index-p4 {
+    margin:.5em;
+    padding-top: 1.5em;
+}
+.index-p3, .index-p4 {
+    padding-bottom: 1.5em;
+}
+
 .post img {
     width: 10em;
     object-fit: contain;
-}
-.index-lorem {
-    margin: .5em;
-    margin-right: .5em;
 }
 /* index page end */
 /* Contact */
