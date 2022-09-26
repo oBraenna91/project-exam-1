@@ -50,7 +50,11 @@ h2 {
 .header-menu a:active {
     background-color: #FFFF;
 }
+
 /* header end */
+
+
+
 /* SLIDER / CAROUSEL*/
 .blogPosts {
     position:relative;
@@ -70,7 +74,7 @@ h2 {
 .listCard {
     width:100%;
     flex: 1 0 100%;
-    background-color: #D5D3D2;
+    background-color: #FFFF;
 }
 .listCard img {
     display: block;
@@ -120,6 +124,9 @@ h2 {
 
 /* SLIDER / CAROUSEL END */
 
+
+
+
 /*index page */
 .index-body, .about-body {
     display:flex;
@@ -135,7 +142,6 @@ h2 {
     position: fixed;
     z-index: -1;
     top:5%;
-
 }
 .index-latest {
     display:flex;
@@ -145,10 +151,9 @@ h2 {
     padding-top: 1em;
     border-radius: .5em;
 }
-.index-latest h2 {
-    background-color:#FFFF;
-    padding: .5em 1em .5em 1em;
-    border-radius: .5em;
+.index-h2 {
+    text-align: center;
+    text-decoration: underline;
 }
 .index-blank1 {
     width:100%;
@@ -160,10 +165,6 @@ h2 {
 .index-h1 {
     margin:.5em;
 }
-.index-latest h2 {
-    margin:auto;
-    text-decoration: underline;
-}
 .index-p1, .index-p2, .index-p3, .index-p4 {
     margin:.5em;
     padding-top: 1.5em;
@@ -171,13 +172,28 @@ h2 {
 .index-p3, .index-p4 {
     padding-bottom: 1.5em;
 }
-
 .post img {
     width: 10em;
     object-fit: contain;
 }
 /* index page end */
+
+
+
+
+
 /* Contact */
+.contact-background {
+    background-image: url("../images/contact-image.jpg");
+    height: 100%;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index:-1;
+    top:30%;
+}
 .form-error {
     display: none;
     font-size:1.2em;
@@ -221,6 +237,8 @@ h2 {
 
 /* Contact end */
 
+
+
 /* post page */
 .detailsH1 {
     text-align: center;
@@ -256,6 +274,9 @@ h2 {
     margin: auto;
 }
 /* post page end */
+
+
+
 
 /* Blogs page */
 
@@ -329,6 +350,9 @@ h2 {
 
 /* Blogs page end */
 
+
+
+
 /* About page */
 
 .about-body {
@@ -367,7 +391,13 @@ h2 {
 
 /* About page end */
 
+
+
+
 /* MEDIA QUERIES */
+
+
+
 
 /* Tablet size */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
@@ -431,6 +461,9 @@ h2 {
         font-size: 2em;
     }
 /* Desktop size*/
+
+
+
 
 /* MEDIA QUERIES END */
 }
