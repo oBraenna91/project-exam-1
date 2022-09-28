@@ -334,6 +334,9 @@ a {
 .tenBlogPosts a, .nextTenPosts a {
     text-decoration: none;
 }
+.blogs-post:hover {
+    background-color: #FFB34B;
+}
 .blogs-post {
     display: flex;
     flex-direction: column;
