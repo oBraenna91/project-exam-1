@@ -83,6 +83,9 @@ a {
     flex: 1 0 100%;
     background-color: #FFFF;
 }
+.listCard:hover {
+    background-color: #FFB34B;
+}
 .listCard img {
     display: block;
     margin:auto;
