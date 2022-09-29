@@ -638,7 +638,7 @@ a {
         height:15vh;
         border-width: 0;
     }
-    .contact-text {
+    .contact-text, .contact-h1 {
         margin-left: 10em;
         margin-right: 10em;
     }
