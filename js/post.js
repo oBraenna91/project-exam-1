@@ -42,11 +42,11 @@ function createHtml(post) {
                                 <div class="details-description">${post.content.rendered}</div>`;
     modalContainer.innerHTML = `
                                 <div id="modalImage">
-                                <img src="${post._embedded['wp:featuredmedia'][0].source_url}" alt="${post.title}">
+                                <img src="${post._embedded['wp:featuredmedia'][0].source_url}" alt="${post._embedded['wp:featuredmedia'][0].alt_text}">
                                 </div>`;
     openModalImage.innerHTML = `
                                 <div id="openModalImageButton">
-                                <img src="${post._embedded['wp:featuredmedia'][0].source_url}" alt="${post.title}">
+                                <img src="${post._embedded['wp:featuredmedia'][0].source_url}" alt="${post._embedded['wp:featuredmedia'][0].alt_text}">
                                 </div>`;
     loadingWheel.style.display= "none";
 }

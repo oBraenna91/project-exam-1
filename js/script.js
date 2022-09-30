@@ -26,7 +26,7 @@ function createHTML(posts){
             <a href="post.html?id=${post.id}" class="post">
             <div class="indexPostTitle"<h2>${post.title.rendered}</h2></div>
             <div class="indexPostImage">
-                <img src="${post._embedded['wp:featuredmedia'][0].source_url}">
+                <img src="${post._embedded['wp:featuredmedia'][0].source_url}" alt="${post._embedded['wp:featuredmedia'][0].alt_text}">
             </div>
             </a>
             </div>
