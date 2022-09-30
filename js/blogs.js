@@ -52,7 +52,7 @@ function createNextHTML(nextPosts){
         `<a href="post.html?id=${nextPosts.id}" class="blogs-post">
             <div class="postTitle"<h2>${nextPosts.title.rendered}</h2></div>
             <div class="blogs-post-image">
-                <img src="${nextPosts._embedded['wp:featuredmedia'][0].source_url}" alt="${post._embedded['wp:featuredmedia'][0].alt_text}">
+                <img src="${nextPosts._embedded['wp:featuredmedia'][0].source_url}" alt="${nextPosts._embedded['wp:featuredmedia'][0].alt_text}">
             </div>
         </a>`;
     })
