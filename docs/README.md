@@ -1,6 +1,7 @@
 # The Fitness Blog
 
-IMAGE
+<img width="293" alt="Skjermbilde 2022-10-16 kl  12 30 58" src="https://user-images.githubusercontent.com/95278401/196030507-95f6daea-3a78-4837-ad1e-be6bd44e4d58.png">
+
 
 This was the project exam used to showcase what we'd learned over the first year. The theme of the blog was up to me to decide, so I chose to create a
 fitness blog.
